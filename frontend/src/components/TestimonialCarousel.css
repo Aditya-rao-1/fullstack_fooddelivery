@@ -1,0 +1,68 @@
+/* src/TestimonialCarousel.css */
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.bgimgg {
+    background-image: url(../../public/assets/carousel_bg.jpg);
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-card-wrapper {
+    padding: 0 20px; /* Adjust the gap between the cards */
+}
+
+.testimonial-card {
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
+    min-height: 300px; /* Adjust the height as needed */
+}
+
+.testimonial-card h3 {
+    margin: 10px 0;
+}
+
+.testimonial-card .title {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.dots-container {
+    display: flex !important;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 30px 10px;
+}
+
+.slick-active .dot {
+    background-color: orange;
+}

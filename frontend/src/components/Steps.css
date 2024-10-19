@@ -1,0 +1,10 @@
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 120px;
+    height: 5px;
+    background-image: url(../assets/underline.png);
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
