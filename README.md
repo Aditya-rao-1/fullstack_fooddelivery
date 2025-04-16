@@ -90,11 +90,7 @@ The app should now be running on:
 
 ---
 
-## ✨ Screenshots (Optional)
 
-Include some screenshots or a short demo video here to showcase your app!
-
----
 
 ## 🔒 Security Notes
 
