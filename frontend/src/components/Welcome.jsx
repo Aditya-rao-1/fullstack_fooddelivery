@@ -5,27 +5,40 @@ import { burgerr } from '../../public/assets';
 
 const Welcome = () => {
   return (
-    <>
-      <div className="relative pb-[150px] mb-5 pt-20 p-10 bg-black">
-        <div className="absolute top-6 right-0 pointer-events-none  max-lg:top-40 max-sm:top-96 xl:w-auto">
-        <img src={burgerr} width={670} height={670} className='max-lg:w-[500px] max-lg:h-[500px]' alt="" />
-        </div>
-        <div className="relative text-white font-semibold z-1 max-w-[45rem] mr-[10px] pt-20 max-md:ml-[20px] max-lg:ml-[50px] max-sm:text-center">
-          <p className="main-text xl:text-7xl lg:text-6xl md:text-[60px] sm:text-[50px]">Savor Every Bite:</p>
-          <p className="main-text xl:text-7xl lg:text-6xl md:text-[60px] sm:text-[50px]">From <span className="fancy">Our Kitchen</span></p>
-          <p className="main-text xl:text-7xl lg:text-6xl md:text-[60px] sm:text-[50px]">to Your Table</p>
-          <p className="sub-text xl:text-2xl lg:text-xl md:text-lg sm:text-base fancy">Delivering Deliciousness to Your Doorstep</p>
+    <div className="relative bg-gradient-to-br from-[#cd8521] via-black to-black text-white min-h-screen flex items-center justify-center px-4 sm:px-6 overflow-hidden">
+      <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[90rem] mx-auto pt-20 pb-16 px-4 gap-12">
+
+        {/* Left Section: Text & Buttons */}
+        <div className="flex flex-col items-start lg:items-start max-w-[45rem] text-left space-y-6">
+          <div className="space-y-3">
+            <p className="main-text xl:text-7xl lg:text-6xl md:text-[60px] sm:text-[50px] font-bold">
+              Savor Every Bite:
+            </p>
+            <p className="main-text xl:text-7xl lg:text-6xl md:text-[60px] sm:text-[50px] font-bold">
+              From <span className="fancy">Our Kitchen</span>
+            </p>
+            <p className="main-text xl:text-7xl lg:text-6xl md:text-[60px] sm:text-[50px] font-bold">
+              to Your Table
+            </p>
+            <p className="sub-text text-xl lg:text-2xl fancy">
+              Delivering Deliciousness to Your Doorstep
+            </p>
+          </div>
+
+          {/* Buttons */}
+          <div className="flex gap-6 pt-4 flex-wrap">
+            <Button white>Order Now</Button>
+            <Button>Get App</Button>
+          </div>
         </div>
 
-        <div className="relative flex max-sm:justify-center z-1 max-w-[40rem] gap-7 mr-[10px] pt-10 max-md:ml-[20px] max-lg:ml-[50px]">
-          <Button white>Order Now</Button>
-          <Button>Get App</Button>
+        {/* Right Section: Image */}
+        <div className="flex justify-center items-center">
+          <img src={burgerr} alt="Burger" className="w-[670px] h-[670px] object-contain" />
         </div>
-
       </div>
-      
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default Welcome;
