@@ -1,6 +1,8 @@
 
 # 🍔 MERN Food Ordering App
 
+![App Screenshot](https://drive.google.com/uc?export=view&id=1VkvfTpE-ywqyqB8DjGKEardgqdR4iSp5)
+
 A full-featured food ordering application built with the **MERN stack (MongoDB, Express.js, React.js, Node.js)**, offering a smooth and modern user experience for browsing food items, managing cart, placing orders, and tracking them in real-time.
 
 
